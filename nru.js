@@ -4,6 +4,7 @@ lista = [
     { frame: 3, tempoCarga: 11, quantRef: 2, tempoUltimaRef: 21, br: 1, bm: 0 },
     { frame: 55, tempoCarga: 11, quantRef: 2, tempoUltimaRef: 21, br: 1, bm: 0 },
     { frame: 6760, tempoCarga: 2, quantRef: 2, tempoUltimaRef: 21, br: 1, bm: 0 },
+    { frame: 6760, tempoCarga: 2, quantRef: 2, tempoUltimaRef: 21, br: 0, bm: 0 },
 ]
 
 //NRU
@@ -13,5 +14,6 @@ let indexUltimaRef;
 for(let i = 0; i < lista.length; i++){
     if (lista[i].br == 0 && lista[i].bm == 0) {
         console.log("Id: " + i);
+        break
     }
 }
